@@ -353,17 +353,20 @@
                                             var rec = result.split("[$@~!~@$]")[i].split("[#@~!~@#]");
                                             if (rec.length > 0) {
                                                 len = rec[0].trim().length + rec[1].trim().length + rec[2].trim().length + rec[3].trim().length + rec[4].trim().length + rec[
-                                                    5].trim().length + rec[6].trim().length;
+                                                    5].trim().length + rec[6].trim().length + rec[7].trim().length + rec[8].trim().length + rec[9].trim().length;
                                                 if (len > 0) {
                                                     rec_count = rec_count + 1;
                                                     result_final.push({
                                                       'ID': rec[0].trim(),
                                                       'DESCRIPTION': rec[1].trim(),
-                                                      'ASSET_TYPE': rec[2].trim(),
-                                                      'COMPANY_CODE': rec[3].trim(),
-                                                      'ASSET_CLASS': rec[4].trim(),
-                                                      'COST_CENTER': rec[5].trim(),
-                                                      'CWIP': rec[6].trim(),
+                                                      'ASSET_CLASS': rec[2].trim(),
+                                                      'COST_CENTER': rec[3].trim(),
+                                                      'CAPITALIZED_MON': rec[4].trim(),
+                                                      'PURCHASE_MON': rec[5].trim(),
+                                                      'COMP_CODE': rec[6].trim(),
+                                                        'STRAT_BUSI_INI': rec[7].trim(),
+                                                        'JUST_COMMENT': rec[8].trim(),
+                                                        'AST_HIERARCHY': rec[9].trim(),
                                                     });
                                                 }
                                             }
